@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Bootstrap 6.0 - Portafolio</title>
+</head>
+
+<body>
+  <header>
+    <!-- Menú de navegación -->
+    <nav class="navbar sm:navbar-expand bg-1 fg-2">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lucas <span class="fw-bold">Diaz</span></a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#portafolio">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Seccion nombre -->
+    <section class="d-flex flex-column align-items-center p-12">
+      <img src="./img/avataaars.svg" alt="" class="avatar img-fluid">
+      <h1 class="pt-6">Lucas Diaz</h1>
+      <div class="d-flex gap-3 align-items-center py-4">
+        <div class="line"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="line"></div>
+      </div>
+      <p>Desarrollador Web Front End</p>
+    </section>
+    <!-- Seccion portafolio -->
+    <section id="portafolio" class="bg-1 fg-2 p-12">
+      <div class="d-flex flex-column align-items-center">
+        <h2>Portafolio</h2>
+        <div class="d-flex gap-3 align-items-center py-4">
+          <div class="line"></div>
+          <i class="fa-solid fa-star"></i>
+          <div class="line"></div>
+        </div>
+      </div>
+      <!-- Grilla -->
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 justify-items-center">
+        <section type="button" class="card" style="max-width: 320px" data-bs-toggle="dialog" data-bs-target="#lemonDialog">
+          <img src="./img/lemon-pie.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-center">Lemon Pie</h4>
+          </div>
+        </section>
+
+        <dialog class="dialog" id="lemonDialog">
+          <div class="dialog-header">
+            <h1 class="dialog-title">Lemon Pie</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <img src="./img/lemon-pie.jpeg" alt="" class="img-fluid">
+            <p>This is a native dialog element. It uses the browser’s built-in modal behavior for accessibility and focus management.</p>
+          </div>
+          <a type="button" class="btn-outline theme-primary" href="http://www.google.com" target="_blank">Visitar sitio</a>
+        </dialog>
+
+        <section type="button" class="card" style="max-width: 320px" data-bs-toggle="dialog" data-bs-target="#batmanDialog">
+          <img src="./img/CVBatman.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-center">Batman CV</h4>
+          </div>
+        </section>
+
+        <dialog class="dialog" id="batmanDialog">
+          <div class="dialog-header">
+            <h1 class="dialog-title">Batman CV</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+          </div>
+          <div class="dialog-body">
+            <img src="./img/CVBatman.png" alt="" class="img-fluid">
+            <p>This is a native dialog element. It uses the browser’s built-in modal behavior for accessibility and focus management.</p>
+          </div>
+          <a type="button" class="btn-outline theme-primary" href="http://www.google.com" target="_blank">Visitar sitio</a>
+        </dialog>
+
+        <section type="button" class="card" style="max-width: 320px">
+          <img src="./img/super.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-center">Lemon Pie</h4>
+          </div>
+        </section>
+        <section type="button" class="card" style="max-width: 320px">
+          <img src="./img/petshop.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-center">Lemon Pie</h4>
+          </div>
+        </section>
+        <section type="button" class="card" style="max-width: 320px">
+          <img src="./img/piza.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-center">Lemon Pie</h4>
+          </div>
+        </section>
+        <section type="button" class="card" style="max-width: 320px">
+          <img src="./img/gameshop.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title text-center">Lemon Pie</h4>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section id="sobre-mi">sobre mi </section>
+    <section id="contacto">contacto</section>
+  </main>
+  <footer>Footer</footer>
+
+  <script type="module" src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
